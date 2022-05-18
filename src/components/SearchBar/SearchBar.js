@@ -12,7 +12,7 @@ const SearchBar = (props) => {
         <FontAwesomeIcon icon={faInstagram} />
       </div>
       <form className="search-form">
-        <input
+        <input onChange={event => props.setSearchTerm(event.target.value)}
           type="text"
           placeholder="Search"
         />
